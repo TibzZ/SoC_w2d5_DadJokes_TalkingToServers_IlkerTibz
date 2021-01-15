@@ -1,6 +1,6 @@
 // I) EXTRACTING API DATA
 // We retrieve information for Dad Joke API
-let resultJoke = document.querySelector("h2");
+let resultJoke = document.querySelector("#joke-prompt");
 
 async function fetchJoke() {
   let response = await fetch("https://icanhazdadjoke.com/", {
