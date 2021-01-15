@@ -8,3 +8,7 @@ button {
   width: 100px;
   height: 30px;
 }
+
+#funny-list {
+  float: left;
+}

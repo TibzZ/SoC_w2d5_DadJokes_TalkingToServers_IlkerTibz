@@ -38,12 +38,22 @@ funnyButton.addEventListener("click", getFunnyImage);
 let notFunnyButton = document.querySelector("#not-funny");
 notFunnyButton.addEventListener("click", getNotFunnyImage);
 
+//Need store values in one of the two following sections:
+//1- Funny
+//2- Not Funny
+// when either funny or not funny button clicked
+//get the joke and store it in the relevant variable below.
+let funnyJokes = [];
+let noFunnyJokes = [];
 
-
-
-// We want to retrieve a picture
-
-// We want to be able to search for a joke
+function seperateJokes() {
+  let liElement = document.createElement("li");
+  let selectOl = document.querySelector("ol");
+  liElement.innerText = resultJoke.innerText;
+  selectOl.appendChild(liElement);
+}
+let button = document.querySelector("#funny-button");
+button.addEventListener("click", seperateJokes);
 
 // async function imageJoke() {
 //   let response = await fetch("https://icanhazdadjoke.com/", {
@@ -66,8 +76,5 @@ notFunnyButton.addEventListener("click", getNotFunnyImage);
 //Folder 1 image 🥴
 //
 
-//Need store values in one of the two following sections:
-//1- Funny
-//2- Not Funny
-
 // option to send funny/not funny quotes to people social media/📧
+// We want to be able to search for a joke
