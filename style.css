@@ -1,7 +1,12 @@
-body {    
-    text-align: center;
+body {
+  text-align: center;
 }
 
-h1 {
-   text-align: center; 
+button {
+  width: 100px;
+  height: 30px;
+}
+
+#funny-button {
+  background: url(funny.png);
 }

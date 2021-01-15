@@ -1,8 +1,7 @@
 // I) EXTRACTING API DATA
-// We retrieve information for Dad Joke API 
+// We retrieve information for Dad Joke API
 
-let resultJoke = document.querySelector("h2")
-
+let resultJoke = document.querySelector("h2");
 
 async function fetchJoke() {
   let response = await fetch("https://icanhazdadjoke.com/", {
@@ -13,13 +12,13 @@ async function fetchJoke() {
   console.log(result.id);
   // We get the related joke
   console.log(result.joke);
-  resultJoke.innerText = result.joke
+  resultJoke.innerText = result.joke;
 }
 
-fetchJoke();
+let newJokeButton = document.querySelector("#new-joke");
+newJokeButton.addEventListener("click", fetchJoke);
 
-// We want to retrieve a picture 
-
+// We want to retrieve a picture
 
 // We want to be able to search for a joke
 
@@ -32,16 +31,15 @@ fetchJoke();
 //   return result.joke;
 // }
 
-
 // Test Print result in h2
 
 // 2 PAGE LAYOUT CUSTOMISATION
-    // Design background plus title 
+// Design background plus title
 
-    // Create Buttons for joke to be categorised as funny or 📓 
+// Create Buttons for joke to be categorised as funny or 📓
 
-    //Need store values in one of the two following sections:
-          //1- Funny 
-          //2- Not Funny
+//Need store values in one of the two following sections:
+//1- Funny
+//2- Not Funny
 
-  // option to send funny/not funny quotes to people social media/📧 
+// option to send funny/not funny quotes to people social media/📧
