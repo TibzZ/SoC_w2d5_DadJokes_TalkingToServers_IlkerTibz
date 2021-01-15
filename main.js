@@ -34,9 +34,14 @@ newJokeButton.addEventListener("click", fetchJoke);
 // Test Print result in h2
 
 // 2 PAGE LAYOUT CUSTOMISATION
+
 // Design background plus title
 
 // Create Buttons for joke to be categorised as funny or 📓
+
+  // for each button we will add a specific image depending of the result
+  //Folder 1 image 🥴 
+  //
 
 //Need store values in one of the two following sections:
 //1- Funny
