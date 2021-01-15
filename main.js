@@ -1,6 +1,5 @@
 // I) EXTRACTING API DATA
 // We retrieve information for Dad Joke API
-
 let resultJoke = document.querySelector("h2");
 
 async function fetchJoke() {
@@ -18,13 +17,29 @@ async function fetchJoke() {
 let newJokeButton = document.querySelector("#new-joke");
 newJokeButton.addEventListener("click", fetchJoke);
 
-function getImage() {
+// FUNCT - Funny img
+function getFunnyImage() {
   let funnyBtnImg = document.querySelector("#funny-button-img");
-  funnyBtnImg.setAttribute("src", "buttonFunny.png");
+  funnyBtnImg.setAttribute("src", "./FunnyImg/Funny1.jpg");
 }
 
+// FUNC - Not funny img
+function getNotFunnyImage() {
+  let notFunnyBtnImg = document.querySelector("#funny-button-img");
+  notFunnyBtnImg.setAttribute("src", "./NoFunnyImg/NotFunny1.jpg");
+}
+
+// To do Randomise pictures when Buttons are clicked
+
+// Calling pict for funny / unfunny buttons
 let funnyButton = document.querySelector("#funny-button");
-funnyButton.addEventListener("click", getImage);
+funnyButton.addEventListener("click", getFunnyImage);
+
+let notFunnyButton = document.querySelector("#not-funny");
+notFunnyButton.addEventListener("click", getNotFunnyImage);
+
+
+
 
 // We want to retrieve a picture
 
