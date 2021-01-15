@@ -1,12 +1,10 @@
 body {
   text-align: center;
+  background: url("background.png") no-repeat fixed center;
+  background-size: auto;
 }
 
 button {
   width: 100px;
   height: 30px;
-}
-
-#funny-button {
-  background: url(funny.png);
 }

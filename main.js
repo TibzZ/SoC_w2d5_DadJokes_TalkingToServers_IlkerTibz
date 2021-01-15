@@ -18,6 +18,14 @@ async function fetchJoke() {
 let newJokeButton = document.querySelector("#new-joke");
 newJokeButton.addEventListener("click", fetchJoke);
 
+function getImage() {
+  let funnyBtnImg = document.querySelector("#funny-button-img");
+  funnyBtnImg.setAttribute("src", "buttonFunny.png");
+}
+
+let funnyButton = document.querySelector("#funny-button");
+funnyButton.addEventListener("click", getImage);
+
 // We want to retrieve a picture
 
 // We want to be able to search for a joke
@@ -39,9 +47,9 @@ newJokeButton.addEventListener("click", fetchJoke);
 
 // Create Buttons for joke to be categorised as funny or 📓
 
-  // for each button we will add a specific image depending of the result
-  //Folder 1 image 🥴 
-  //
+// for each button we will add a specific image depending of the result
+//Folder 1 image 🥴
+//
 
 //Need store values in one of the two following sections:
 //1- Funny
