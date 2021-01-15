@@ -50,6 +50,7 @@ function funnyJokeList() {
   let selectOl = document.querySelector("#funny-list");
   liElement.innerText = resultJoke.innerText;
   selectOl.appendChild(liElement);
+  // alert()
 }
 let funnyButtonList = document.querySelector("#funny-button");
 funnyButtonList.addEventListener("click", funnyJokeList);
