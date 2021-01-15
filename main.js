@@ -44,27 +44,25 @@ notFunnyButton.addEventListener("click", getNotFunnyImage);
 //get the joke and store it in the relevant variable below.
 let funnyJokes = [];
 let noFunnyJokes = [];
-
-function seperateJokes() {
+//Funny List array
+function funnyJokeList() {
   let liElement = document.createElement("li");
-  let selectOl = document.querySelector("ol");
+  let selectOl = document.querySelector("#funny-list");
   liElement.innerText = resultJoke.innerText;
   selectOl.appendChild(liElement);
 }
-let button = document.querySelector("#funny-button");
-button.addEventListener("click", seperateJokes);
+let funnyButtonList = document.querySelector("#funny-button");
+funnyButtonList.addEventListener("click", funnyJokeList);
 
 // Not Funny list array
-function seperateJokes() {
+function notFunnyJokeList() {
   let liElement = document.createElement("li");
-  let selectOl = document.querySelector("ol");
+  let selectOl = document.querySelector("#not-funny-list");
   liElement.innerText = resultJoke.innerText;
   selectOl.appendChild(liElement);
 }
-let button = document.querySelector("#funny-button");
-button.addEventListener("click", seperateJokes);
-
-
+let notFunnyButtonList = document.querySelector("#not-funny");
+notFunnyButtonList.addEventListener("click", notFunnyJokeList);
 
 // async function imageJoke() {
 //   let response = await fetch("https://icanhazdadjoke.com/", {

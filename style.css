@@ -12,3 +12,7 @@ button {
 #funny-list {
   float: left;
 }
+
+#not-funny-list {
+  float: right;
+}
